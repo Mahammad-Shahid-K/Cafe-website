@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #33251f;
+  line-height: 1.6;
+  background: #fffaf3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8%;
+  background: #fffaf3;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #6f422c;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #33251f;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #a6653f;
+}
+
+.hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background: linear-gradient(120deg, #f1dfc7, #fffaf3);
+}
+
+.hero-content {
+  max-width: 580px;
+}
+
+.tagline,
+.eyebrow {
+  color: #98603f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 68px);
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+  max-width: 470px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 6px;
+  background: #6f422c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #4e2d20;
+}
+
+.section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.menu-card {
+  padding: 28px 20px;
+  border: 1px solid #eadccc;
+  border-radius: 12px;
+  background: white;
+}
+
+.emoji {
+  font-size: 38px;
+}
+
+.menu-card h3 {
+  margin: 12px 0;
+}
+
+.menu-card p {
+  margin-bottom: 14px;
+  color: #76665c;
+}
+
+.menu-card strong {
+  color: #8a5335;
+}
+
+.note {
+  font-size: 12px;
+  color: #76665c;
+  margin-top: 18px;
+}
+
+.about {
+  padding: 70px 10%;
+  background: #eee0cf;
+  text-align: center;
+}
+
+.about > div {
+  max-width: 650px;
+  margin: auto;
+}
+
+.contact > p:not(.eyebrow):not(.note) {
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #33251f;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: 420px;
+    padding: 55px 7%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 55px 7%;
+  }
+}
